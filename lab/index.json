@@ -6,7 +6,7 @@
     "details": {
         "steps": [
             {
-                "title": "Step 1 - Etcd",
+                "title": "Step 1 - Run your first container",
                 "text": "step1.md"
             }
         ],
@@ -20,7 +20,7 @@
         }
     },
     "files": [
-        "app.js"
+        "docker-compose.yml"
     ],
     "environment": {
         "uilayout": "terminal",
