@@ -20,7 +20,7 @@
         }
     },
     "files": [
-        "docker-compose.yml"
+        "lab/docker-compose.yml"
     ],
     "environment": {
         "uilayout": "terminal",
