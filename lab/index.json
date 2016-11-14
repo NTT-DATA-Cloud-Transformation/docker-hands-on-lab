@@ -24,6 +24,7 @@
 	    },
 	    {
 		"title": "Step 5 - Run a full application",
+		"cousreData" : "step5-cd.sh",
 		"text" : "step5.md"
 	    }
         ],
