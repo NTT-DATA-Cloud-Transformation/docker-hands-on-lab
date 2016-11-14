@@ -20,10 +20,10 @@
         }
     },
     "files": [
-        "lab/docker-compose.yml"
+        "*"
     ],
     "environment": {
-        "uilayout": "terminal",
+        "uilayout": "editor",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
     },
     "backend": {
