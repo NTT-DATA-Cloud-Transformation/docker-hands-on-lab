@@ -20,6 +20,8 @@ services:
       MYSQL_ROOT_PASSWORD: example
 ```
 
+You can also get the contents from here: [https://github.com/Flux7Labs/docker-hands-on-lab/blob/master/lab/docker-compose.yml](https://github.com/Flux7Labs/docker-hands-on-lab/blob/master/lab/docker-compose.yml)
+
 Now run this file as:
 `docker-compose up -d`{{execute}}
 
