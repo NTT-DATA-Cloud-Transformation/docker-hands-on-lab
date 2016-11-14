@@ -1,1 +1,2 @@
-ls
+export PS=docker-lab
+
