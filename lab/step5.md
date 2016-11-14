@@ -2,7 +2,7 @@ While running a single container is useful, it is far more useful to be able to 
 
 Analyze the following `docker-compose.yml` file. 
 
-`
+```
 version: '2'
 
 services:
@@ -18,8 +18,8 @@ services:
     image: mariadb
     environment:
       MYSQL_ROOT_PASSWORD: example
-`
+```
 
 Now run this file as:
-`docker-compose up -d` 
+`docker-compose up -d`{{execute}}
 
