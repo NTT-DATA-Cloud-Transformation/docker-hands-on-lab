@@ -7,10 +7,25 @@
         "steps": [
             {
                 "title": "Step 1 - Run your first container",
-		"code" : "step1.sh",
-                "text": "step1.md",
-		"courseData" : "step1-cd.sh"
-            }
+                "text": "step1.md"
+            },
+	    {
+		"title": "Step 2 - Run a more interesting container",
+		"text": "step2.md"
+	    },
+	    {
+		"title": "Step 3 - Container lifecycle and ports",
+		"text": "step3.md"
+	    },
+	    {
+		"title": "Step 4 - Create your own image",
+		"courseData" : "step4-cd.sh",
+		"text" : "step4.md"
+	    },
+	    {
+		"title": "Step 5 - Run a full application",
+		"text" : "step5.md"
+	    }
         ],
         "intro": {
             "text": "intro.md",
@@ -22,14 +37,14 @@
         }
     },
     "files": [
-        "Dockerfile"
+        "scratch"
     ],
     "environment": {
         "uilayout": "editor",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
     },
     "backend": {
-        "port": 8080,
+        "port": 80,
         "imageid": "docker"
     }
 }
