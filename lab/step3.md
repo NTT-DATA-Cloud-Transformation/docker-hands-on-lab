@@ -11,10 +11,10 @@ First, lets revise a few key concepts.
 For this step, let us `nginx`
 
 Pull the nginx conainer:
-`docker pull nginx`
+`docker pull nginx`{{execute}}
 
 Run the nginx container as follows:
-`docker run nginx`
+`docker run --name=mynginx nginx`{{execute}}
 
 You will see that the screen hangs and you do not get any output. At this time, you can try to open another terminal window.  
 
@@ -22,17 +22,17 @@ On KataKoda, after a few moments you will be able to visit the with the URL http
 
 If you are running the container locally, you can visit the nginx default web page at: 
 
-http://<container IP>:80
+http://ContainerIP:80
 
 Now kill the container by hitting Control-C. If you revisit the page again, you will not see it. This is because the container the process have exited. 
 
 Now re-run the same container in deamon mode using `-d` as follows: 
-`docker run -d --name=mywebsite  nginx`
+`docker run -d --name=mywebsite  nginx`{{execute}}
 
 `mywebsite` is just a name, you can give your container a different name if you like. 
 
 Now confirm that your container is running using:
-`docker ps`
+`docker ps`{{execute}}
 
 You shall see the nginx container in the list. 
 
@@ -40,7 +40,7 @@ You can stop this container using docker `docker stop mywebsite`{{execute}}
 
 You will again not be able to access. Now run the container with `docker start mywebsite`{{execute}}
 
-Stop the container again. You can see the stopped containers by running `docker ps -a`
+Stop the container again. You can see the stopped containers by running `docker ps -a`{{execute}}
 
-You can permanently delete the container by running `docker rm mywebsite`
+You can permanently delete the container by running `docker rm mywebsite`{{execute}}
 

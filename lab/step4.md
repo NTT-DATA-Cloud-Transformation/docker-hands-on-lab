@@ -3,10 +3,10 @@ Now we will learn how to build a new Docker image. The goal is to create a new i
 Create your Dockerfile for building your image by copying the contents below into the editor.
 
 A file, index.html, has already been created for you and placed in the environment. Check that it is there:
-`ls`
+`ls`{{execute}}
 
 You can see its contents by running
-`cat index.html`
+`cat index.html`{{execute}}
 
 Now add the following contents to your Dockerfile. 
 

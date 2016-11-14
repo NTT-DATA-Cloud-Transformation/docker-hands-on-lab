@@ -15,7 +15,15 @@ You can ls other folder in the image, for example,
 `docker run busybox ls /bin`{{execute}}
 
 Now, try this: 
-`docker run whoami`{{execute}}
+`docker run busybox whoami`{{execute}}
 `
 
 The commands in busybox are run as root (the root inside the container) by default. 
+
+
+You can also work with a container interatively and get on a prompt to look around. It can be done as follows: 
+
+`docker run -it busybox sh`
+
+You can learn more about your container here, e.g., run `ifconfig` to see what IP has Docker assigned to the container. 
+
