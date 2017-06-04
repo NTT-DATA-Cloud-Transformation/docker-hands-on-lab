@@ -14,7 +14,7 @@ Pull the nginx conainer:
 `docker pull nginx`{{execute}}
 
 Run the nginx container as follows:
-`docker run --name=mynginx nginx`{{execute}}
+`docker run -p 80:80 --name=mynginx nginx`{{execute}}
 
 You will see that the screen hangs and you do not get any output. At this time, you can try to open another terminal window.  
 
@@ -27,7 +27,7 @@ http://ContainerIP:80
 Now kill the container by hitting Control-C. If you revisit the page again, you will not see it. This is because the container the process have exited. 
 
 Now re-run the same container in deamon mode using `-d` as follows: 
-`docker run -d --name=mywebsite  nginx`{{execute}}
+`docker run -p 80:80 -d --name=mywebsite  nginx`{{execute}}
 
 `mywebsite` is just a name, you can give your container a different name if you like. 
 
