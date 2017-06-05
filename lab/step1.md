@@ -23,7 +23,7 @@ Now let us dissect this image. The container image hello-world is hosted at [Doc
 FROM scratch
 COPY hello /
 CMD ["/hello"]
-`
+`{{copy}}
 
 You can find the [ actual source here ](https://github.com/docker-library/hello-world/blob/master/hello-world/Dockerfile).
 
