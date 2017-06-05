@@ -41,7 +41,7 @@
         "scratch"
     ],
     "environment": {
-        "uilayout": "editor",
+        "uilayout": "terminal-editor",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
     },
     "backend": {
