@@ -13,7 +13,7 @@ Now add the following contents to your Dockerfile.
 `
 FROM nginx
 COPY index.html /usr/share/nginx/html
-`
+`{{copy}}
 
 The first line is the base image, nginx in this case. The second list is copying the index.html file in the location where nginx looks for the index.html.
 
@@ -25,7 +25,7 @@ Now build the image,
 Once the command completes, you can see your new image listed:
 `docker images`{{execute}}
 
-Now run the container using this image. You are expected to figure out what the command will be for this. You will be able to check your container is running correctly using `docker ps`{{execute}} and by visiting the URL https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/ 
+Now run the container using this image. You are expected to figure out what the command will be for this. You will be able to check your container is running correctly using `docker ps`{{execute}} and by visiting the URL https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
 
 Now figure out the steps to change the text displayed from Hello World to "I have got this"
 
