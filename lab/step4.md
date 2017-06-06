@@ -27,6 +27,8 @@ Once the command completes, you can see your new image listed:
 
 Now run the container using this image. You are expected to figure out what the command will be for this. You will be able to check your container is running correctly using `docker ps`{{execute}} and by visiting the URL https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
 
+To avoid typing in the nginx command when running the container you can add a default command to the container image using the directive `CMD` to the end of the Dockerfile. Try it out by adding the line `CMD ["nginx", "-g", "daemon off;"]`{{copy}} to the end of the Dockerfile.
+
 Now figure out the steps to change the text displayed from Hello World to "I have got this"
 
 Stop and remove your container.
