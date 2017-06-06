@@ -21,7 +21,7 @@ services:
        - db
      image: wordpress:latest
      ports:
-       - "8000:80"
+       - "80:80"
      restart: always
      environment:
        WORDPRESS_DB_HOST: db:3306
@@ -35,3 +35,5 @@ You can also get the contents from here: [https://github.com/Flux7Labs/docker-ha
 
 Now run this file as:
 `docker-compose up -d`{{execute}}
+
+You can view the containers using `docker ps` and see Wordpress running on the URL: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
