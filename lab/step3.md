@@ -43,3 +43,5 @@ You will again not be able to access. Now run the container with `docker start m
 Stop the container again. You can see the stopped containers by running `docker ps -a`{{execute}}
 
 You can permanently delete the container by running `docker rm mywebsite`{{execute}}
+
+Docker lets us find out more about a container using `docker inspect` command. Type `docker inspect nginx`{{execute}} to see more about how the nginx container is setup.
